@@ -139,3 +139,32 @@
   right: -15px;
   top: -15px;
 }
+
+/* resize */
+
+.drawflow-resize {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #fff;
+  color: #43b993;
+  z-index: 4;
+  border: 2px solid #b94345;
+  line-height: 30px;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 50%;
+  font-family: monospace;
+  cursor: se-resize
+}
+
+.drawflow > .drawflow-resize {
+  margin-left: -5px;
+  margin-bottom: 5px
+}
+
+.parent-node .drawflow-resize {
+  right: -5px;
+  bottom: -5px
+}
